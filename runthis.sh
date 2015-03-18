@@ -1,0 +1,1 @@
+Install yaourt, git, gitg,  
