@@ -1,0 +1,2 @@
+# panconfig
+Manjaro auto config 
