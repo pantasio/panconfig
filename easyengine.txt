@@ -1,0 +1,188 @@
+easyengine
+
+HTTP Auth User Name: easyengine
+HTTP Auth Password : tVwavB
+
+WordPress admin user : pantasio
+WordPress admin user password : MfNirTztkS5RK2a
+Configure W3TC:         http://pantasio.com/wp-admin/admin.php?page=w3tc_general
+Page Cache:             Disk Enhanced
+Database Cache:         Memcached
+Object Cache:           Memcached
+Browser Cache:          Disable
+Successfully created site http://pantasio.com
+
+WordPress admin user : pantasio
+WordPress admin user password : MfNirTztkS5RK2a
+Configure W3TC:         http://pantasio.com/wp-admin/admin.php?page=w3tc_general
+Page Cache:             Disk Enhanced
+Database Cache:         Memcached
+Object Cache:           Memcached
+Browser Cache:          Disable
+Successfully created site http://pantasio.com
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+
+sudo ee site create hoathylan.com --w3tc
+Setting up NGINX configuration  [Done]
+Setting up webroot              [Done]
+Downloading Wordpress           [Done]
+Setting up database             [Done]
+Installing plugin nginx-helper
+Installing plugin w3-total-cache
+Reload : nginx     [OK]
+WordPress admin user : pantasio
+WordPress admin user password : 9MoUgrQzSivbZVL
+Configure W3TC:         http://hoathylan.com/wp-admin/admin.php?page=w3tc_general
+Page Cache:             Disk Enhanced
+Database Cache:         Memcached
+Object Cache:           Memcached
+Browser Cache:          Disable
+Successfully created site http://hoathylan.com
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Installing Drush 7 using Composer
+
+- See more detail at: http://whaaat.com/installing-drush-7-using-composer
+
+
+
+I've recently come across this problem a few times while talking to friends and collegues. It seems people are still using Homebrew or other strange methods to try and get Drush installed locally. This is especially frustrating for people looking to get started with Drupal 8 development as it requires Drush 7. Using Composer is far and away the easiest method to install Drush.
+
+First install Composer globally.
+
+$ curl -sS https://getcomposer.org/installer | php
+$ mv composer.phar /usr/local/bin/composer
+$ export PATH="$HOME/.composer/vendor/bin:$PATH"
+$ source ~/.bash_profile
+Now that you have Composer working, you can install Drush 7 from the latest HEAD.
+
+$ composer global require drush/drush:dev-master
+To update Drush:
+
+$ composer global update
+
+Roll back to a release version of Drush
+
+$ composer global require drush/drush:7.*
+Install a specific version of Drush. For example: Drush 6.1.0
+
+$ composer global require drush/drush:6.1.0
+No really, we're done now.
+
+You can now go back to doing whatever it is you were doing before you realized you needed to install Drush 7. :)
+
+- See more at: http://whaaat.com/installing-drush-7-using-composer#sthash.BkeNpO1y.dpuf
+
+==============================================
+
+
+$apt-get install zsh
+
+$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh 
+
+$sudo chsh $USER -s $(which zsh);
+
+
+================================================
+
+
+git clone --branch 7.x http://git.drupal.org/project/drupal.git
+
+
+mySQL pass 
+nano ~/.my.cnf
+
+
+user = root
+password = TIRrCLNd
+
+
+user = root
+password = TIRrCLNd
+
+
+
+
+
+#thuc hien:
+Step-by-step Installing Drupal 7 Manually
+Step 1. Download and extract all drupal files into /var/www/ directory:
+
+sudo -i
+cd /var/www
+wget http://ftp.drupal.org/files/projects/drupal-7.15.tar.gz
+tar xvf drupal-7.15.tar.gz
+mv drupal-7.15/ drupal
+Step 2. Change an ownership of all Drupal installation files to www-data user.
+
+chown -R www-data.www-data /var/www/drupal/
+
+#Create a MySQL database to be used by our new Drupal 7 installation, Let’s create and use following credentials:
+
+#Database: dbdrupal
+#User: drupaluser
+#Password: drupalpass
+
+
+mysql -u root -p
+create database dbdrupal;
+CREATE USER drupaluser;
+Create password: “drupalpass” for user: “drupaluser”
+
+SET PASSWORD FOR drupaluser = PASSWORD("drupalpass");
+
+#Grant user drupaluser all permissions on the database.
+
+GRANT ALL PRIVILEGES ON dbdrupal.* TO drupaluser@localhost IDENTIFIED BY "drupalpass";
+
+#Logout from mysql server
+
+quit
+
+
+mysql -u root -p
+create database wikidata;
+CREATE USER huycan5369;
+SET PASSWORD FOR huycan5369 = PASSWORD("qwe123AAA");
+GRANT ALL PRIVILEGES ON wikidata.* TO huycan5369@localhost IDENTIFIED BY "qwe123AAA";
+
+
+sudo chown -R www-data:www-data tat-ca-cac-file
+
+sudo mv *.txt *.php *.html wp* ./backupsite
+
+sudo chown -R pantasiov7_gmail_com:www-data /var/www/pantasio.com/
+
+
+
+
+
+cd drupal-7.35 
+mv * .[^.]* ..
+  cd ..
+rm -R drupal-7.35
+sudo chown -R www-data:www-data *
+sudo chown -R www-data:www-data .*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
